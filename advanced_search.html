@@ -1,0 +1,58 @@
+<!-- https://www.google.com/search?q=harvard -->
+<!-- https://www.google.com/search?q=harvard&tbm=isch -->
+<!-- https://www.google.com/advanced_search -->
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <title>Розширений пошук Google</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="google.html">Пошук Google</a>
+      <!-- <a href="img_search.html">Пошук зображень Google</a> -->
+      <!-- <a href="advanced_search.html">advanced_search</a> -->
+    </nav>
+    <main>
+      <!-- https://www.google.com/search?as_q=qwerty&as_epq=qw&as_oq=qwe&as_eq=rty&as_nlo=&as_nhi=&lr=&cr=&as_qdr=all&as_sitesearch=&as_occt=any&as_filetype=&tbs= -->
+      <!-- Знайти сторінки із… «усіма цими словами»:”
+Знайти сторінки з… «саме цим словом або фразою»:”
+Знайти сторінки з… «будь-яким із цих слів»:
+Знайти сторінки з… «жодне з цих слів»: -->
+
+      <h1>
+        Розширений пошук
+        <span class="blue">G</span>
+        <span class="red">o</span>
+        <span class="yellow">o</span>
+        <span class="blue">g</span>
+        <span class="green">l</span>
+        <span class="red">e</span>
+        <!-- Google -->
+      </h1>
+      <h2>Знайти сторінки, що містять...</h2>
+
+      <form action="https://google.com/search">
+        <div id="container">
+          <label for="as_q">усіма цими словами</label>
+          <input type="text" id="as_q" name="as_q" />
+
+          <label for="as_epq">саме цим словом або фразою</label>
+          <input type="text" id="as_epq" name="as_epq" />
+
+          <label for="as_oq">будь-яким із цих слів</label>
+          <input type="text" id="as_oq" name="as_oq" />
+
+          <label for="as_eq">жодне з цих слів</label>
+          <input type="text" id="as_eq" name="as_eq" />
+          <label for=""></label>
+          <input
+            type="submit"
+            value="Розширений пошук"
+            id="advanced_search_submit"
+          />
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

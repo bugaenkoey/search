@@ -1,0 +1,83 @@
+.blue {
+    color: blue;
+}
+
+.red {
+    color: red;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.green {
+    color: green;
+}
+.blue , .green , .red , .yellow{
+    text-shadow: 2px 2px 4px black;
+    margin: -7px;
+}
+h1{
+    text-align: center;
+}
+nav{
+    text-align: right;
+}
+nav a{
+    margin: 10px;
+}
+
+label{
+    margin: 5px 20px;
+}
+/* 
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  } */
+
+  #container {
+      display: grid;
+      grid-template-columns: max-content 1fr;
+      /* Перший стовпчик для міток, другий - для полів вводу */
+      grid-row-gap: 10px;
+      /* Задайте бажаний відступ між рядками */
+  }
+
+   /* input[type="submit"] {
+    text-align: center;
+       background-color: blue;
+       color: white;
+   } */
+
+#search > input{
+    display: flex;
+    /* margin: 10px,auto,10px,auto; */
+    margin-block-start: 10px;
+    margin-left: auto;
+        margin-right: auto;
+/* text-align: center; */
+}
+#search > input[type="text"]{
+    border-radius: 15px;
+}
+   
+   #advanced_search_submit{
+       display: inline-block;
+       /* Змініть відображення на inline-block */
+       margin: 10px auto;
+       /* Вирівняйте по центру по горизонталі і задайте відступи зверху і знизу */
+       padding: 5px 10px;
+       /* Задайте бажаний внутрішній відступ */
+       background-color: blue;
+       /* Задайте колір фону */
+       color: #fff;
+       /* Задайте колір тексту */
+       border: 1px solid blueviolet;
+       /* Видаліть рамку */
+       cursor: pointer;
+       /* Змініть курсор при наведенні */
+       border-radius: 5px;
+       /* Задайте закруглені кути */
+   }
